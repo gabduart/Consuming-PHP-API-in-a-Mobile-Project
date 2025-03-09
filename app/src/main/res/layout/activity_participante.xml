@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParticipanteActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/participante"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtNomePart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="@string/nome"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/edtTelefonePart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="@string/telefoneParticipante"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtNomePart" />
+
+        <EditText
+            android:id="@+id/edtEmailPart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="@string/emailParticipante"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtTelefonePart" />
+
+        <EditText
+            android:id="@+id/edtIdadePart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="@string/idadeParticipante"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmailPart" />
+
+        <Button
+            android:id="@+id/btnCadastrarPart"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn"
+            android:text="@string/btnCad"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtIdadePart" />
+
+        <Button
+            android:id="@+id/btnExcluirPart"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn"
+            android:text="@string/btnExc"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/btnCadastrarPart"
+            app:layout_constraintTop_toBottomOf="@+id/edtIdadePart" />
+
+        <Button
+            android:id="@+id/btnEditarPart"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn"
+            android:text="@string/btnEdi"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/btnExcluirPart"
+            app:layout_constraintTop_toBottomOf="@+id/edtIdadePart" />
+
+        <Button
+            android:id="@+id/btnLimparPart"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="75dp"
+            android:background="@drawable/btn"
+            android:text="@string/btnLim"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnConsultarPart" />
+
+        <Button
+            android:id="@+id/btnConsultarPart"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn"
+            android:text="@string/btnConsultar"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/btnLimparPart"
+            app:layout_constraintTop_toBottomOf="@+id/btnExcluirPart" />
+
+        <ListView
+            android:id="@+id/lstDados"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnConsultarPart" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

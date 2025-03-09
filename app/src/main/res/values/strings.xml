@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">hoower</string>
+    <string name="agenda">Eventos</string>
+    <string name="nome">Nome</string>
+    <string name="Email">Data</string>
+    <string name="telefone">Local</string>
+    <string name="descricao">Descrição</string>
+
+    <string name="participante">Participantes</string>
+    <string name="nomeParticipante">Nome</string>
+    <string name="emailParticipante">Email</string>
+    <string name="telefoneParticipante">Telefone</string>
+    <string name="idadeParticipante">Idade</string>
+
+    <string name="btnCad">Cadastrar</string>
+    <string name="btnEdi">Editar</string>
+    <string name="btnExc">Excluir</string>
+    <string name="btnConsultar">Consultar</string>
+    <string name="btnLim">Limpar</string>
+    <string name="edtCod">Código</string>
+
+    <string name="part">Tela Participantes</string>
+    <string name="event">Tela Eventos</string>
+    <string name="main">Tela Inicial</string>
+
+    <string name="edtConNome">Procure por um nome</string>
+</resources>
